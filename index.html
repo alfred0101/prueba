@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+<head>
+     <title>San Simon-San Judas</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="css/superfish.css">
+     <link rel="stylesheet" href="css/camera.css">
+     <link rel="stylesheet" href="font/font-awesome.css" type="text/css" media="screen">
+     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Lato:400,900,900italic' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/script.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/superfish.js"></script>
+
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/camera.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     
+    <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+     <script src="js/jquery.tools.min.js"></script>
+
+
+     <script>
+        $(document).ready(function() {
+            jQuery('#camera_wrap_1').camera({
+                pagination: false,
+                height: '49,14%',
+                playPause: false,
+                time: 8000,
+                transPeriod: 700,
+                fx: 'stampede',
+                loader: 'none',
+                minHeight:'200px'
+            });
+
+            
+            $('#foo').carouFredSel({
+                auto: false,
+                responsive: true,
+                width: '100%',
+                prev: '#prev1',
+                next: '#next1',
+                scroll: 1,
+                items: {
+                    height: 'auto',
+                    width: 300,
+                    visible: {
+                        min: 1,
+                        max: 4
+                    }
+                },
+                mousewheel: true,
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                }
+            });
+            
+            $(".tabs1 ul").tabs(".tab_container .tab_content");
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+
+     </head>
+     <body>
+<!--==============================header=================================-->
+<div class="bg-2">
+    <header class="bord-1 p1">
+        
+        <div class="container_12">
+            <div class="row">
+                <div class="grid_12">
+                    <img src="images/logo.PNG" alt="">
+                    <h1 class="logo">
+                         <a href="index.html"> 
+                            <span></span>
+                        </a> 
+                        
+                    </h1>
+                    <nav>
+                        <ul class="sf-menu">
+                            <li class="current"><a href="index.html">INICIO</a></li>
+                            <li><a href="index.html">CONOCENOS</a>
+                                <ul>
+                                    <li><a href="#">HISTORIA</a></li>
+                                    <li><a href="#">MISION</a></li>
+                                    <li><a href="#">VISION</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li><a href="index.html">PRODUCTOS</a></li>
+                            <li><a href="index.html">GALERIA</a></li>
+                            <li><a href="index.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container_12">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="slider-1">
+                        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                            <div data-src="images/todo-barro.GIF">
+                                <div class="camera_caption fadeIn">
+                                    <span>¿Qué tienen de especial los suelos de barro artesanales de San Simon y San Judas?</span>
+                                </div>
+                            </div>
+                            <div data-src="images/slider2.jpg">
+                                <div class="camera_caption fadeIn">
+                                    <span>¿Eres de los que adoptan las últimas tendencias de decoración con los ojos cerrados?</span>
+                                </div>
+                            </div>
+                            <div data-src="images/slider3.jpg">
+                                <div class="camera_caption fadeIn">
+                                    <span>¿Cuáles son los tratamientos y cuidados de limpieza a aplicar a estos suelos de barro para mantenerlos durante tiempo y con el aspecto original?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<footer>
+    <div class="bg-5">
+        <div class="container_12">
+            <div class="row">
+                <div class="grid_3 suffix_1 w1">
+                    <div class="maxheight2">
+                        <h5>DIRECCION</h5>
+                        <div class="address">
+                            <div>Carretera Costera Pinotepa - <br />
+Puerto Escondido KM 1 Barrio Laboratorio Santiago Pinotepa Nal.</div>
+                            <div>Telefono Cel.:+52 94 133 90 66<br />
+<br />
+E-mail.:   productosdebarro24@hotmail.com</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_2 suffix_1 w1">
+                    <div class="maxheight2">
+                        <h5>PRODUCTOS</h5>
+                        <p><a href="#">Teja Artesanal</a></p>
+                        <p><a href="#">Block Rustico</a></p>
+                        <p><a href="#">Tabique Ligero</a></p>
+			<p><a href="#">Maseteros</a></p>
+			<p><a href="#">Yeso-Piedra</a></p>
+                    </div>
+                </div>
+                <div class="grid_2 suffix_1 w1">
+                    <div class="maxheight2 "> <h5>Menu</h5>
+                        <ul>
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="index.html">CONOCENOS</a></li>
+                            <li><a href="index.html">PRODUCTOS</a></li>
+                            <li><a href="index.html">GALERIA</a></li>
+                            <li><a href="index.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid_2 w1">
+                    <div class="maxheight2">
+                        <h5>REDES SOCIALES</h5>
+                        <ul class="list-services clearfix">
+                            <li><a href="#"><img src="images/icon1.png" width="24px" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icon2.png" width="24px" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icon3.png" width="24px" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icon4.png" width="24px" alt="" /></a></li>
+                            <li><a href="#"><img src="images/icon5.png" width="24px" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_12">
+        <div class="row">
+            <div class="grid_12 p3">
+                Area de Desarrollo - Soluciones  CT 2020 <br />
+            </div>
+        </div>
+    </div>
+
+   
+
+</body>
+
+</html>
